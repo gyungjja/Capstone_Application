@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/info_background_color">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="목표치"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/sub_text_color"
+                        android:text="한달 목표치를 설정하세요."
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layGoal"
+                        android:orientation="horizontal"
+                        android:layout_width="0px"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textSize="14sp"
+                        android:text="km"
+                        />
+
+                    <Button
+                        android:id="@+id/btnGoalApply"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/button_normal_text_selector"
+                        android:textStyle="bold"
+                        android:text="적용"
+                        android:stateListAnimator="@null"
+                        android:background="@drawable/button_normal_selector"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="나의정보"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgMyEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account_edit_24_blue"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        />
+
+                </LinearLayout>
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/sub_text_color"
+                            android:text="학번"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtNumber"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"
+                            android:textSize="13sp"
+                            android:text="@string/default_text"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/sub_text_color"
+                            android:text="이름"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"
+                            android:textSize="13sp"
+                            android:text="@string/default_text"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/sub_text_color"
+                            android:text="휴대번호"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtPhone"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"
+                            android:textSize="13sp"
+                            android:text="@string/default_text"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/sub_text_color"
+                            android:text="성별"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtGender"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"
+                            android:textSize="13sp"
+                            android:text="@string/default_text"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/sub_text_color"
+                            android:text="키"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtHeight"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"
+                            android:textSize="13sp"
+                            android:text="@string/default_text"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/sub_text_color"
+                            android:text="몸무게"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtWeight"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"
+                            android:textSize="13sp"
+                            android:text="@string/default_text"
+                            />
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layLoading"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/popup_transparent"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

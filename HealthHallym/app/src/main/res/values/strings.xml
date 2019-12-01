@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Health Hallym</string>
+
+    <!--    디자인할때 표시할 디폴트 글자    -->
+    <string name="default_text">-</string>
+
+    <!--    Activity    -->
+    <string name="activity_title_main">Health Hallym</string>
+    <string name="activity_title_walk_history">내역</string>
+    <string name="activity_title_setting">설정</string>
+    <string name="activity_title_my_edit">나의 정보 수정</string>
+
+    <!--    Menu    -->
+    <string name="menu_history">내역</string>
+    <string name="menu_setting">설정</string>
+    <string name="menu_ok">확인</string>
+
+    <!--    Message    -->
+    <string name="msg_back_press_end">\'뒤로\' 버튼을 한번 더 누르면 종료됩니다.</string>
+    <string name="msg_number_check_empty">학번을 입력하세요.</string>
+    <string name="msg_number_check_overlap">동일한 학번이 존재합니다.</string>
+    <string name="msg_password_check_empty">비밀번호를 입력하세요.</string>
+    <string name="msg_password_check_length">>비밀번호를 6자리 이상 입력하세요.</string>
+    <string name="msg_phone_number_check_empty">휴대번호를 입력하세요.</string>
+    <string name="msg_phone_number_check_wrong">휴대번호 형식이 올바르지 않습니다.</string>
+    <string name="msg_user_name_check_empty">이름을 입력하세요.</string>
+    <string name="msg_user_height_check_empty">키를 입력하세요.</string>
+    <string name="msg_user_height_check_wrong">키를 정확히 입력하세요.</string>
+    <string name="msg_user_weight_check_empty">몸무게를 입력하세요.</string>
+    <string name="msg_user_weight_check_wrong">몸무게를 정확히 입력하세요.</string>
+    <string name="msg_goal_check_empty">목표치를 입력하세요.</string>
+    <string name="msg_goal_check_wrong">목표치를 정확히 입력하세요.</string>
+    <string name="msg_login_failure">등록된 사용자가 없거나 비밀번호가 잘못되었습니다.</string>
+    <string name="msg_walk_save_success">걷기정보가 저장되었습니다.</string>
+    <string name="msg_data_empty">내역이 없습니다.</string>
+    <string name="msg_qr_code_scan_failure">QR 코드 인식을 실패하였습니다.</string>
+    <string name="msg_gps_disable">GPS 설정이 되어있지 않습니다.</string>
+    <string name="msg_error">일시적인 장애가 발생했습니다.</string>
+
+    <!--    Dialog    -->
+    <string name="dialog_title_gps_setting">GPS 사용여부 설정</string>
+    <string name="dialog_msg_gps_setting">GPS 설정이 되어있지 않습니다.\n설정창으로 이동하시겠습니까?</string>
+    <string name="dialog_ok">확인</string>
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_yes">예</string>
+    <string name="dialog_no">아니오</string>
+    <string name="dialog_end">종료</string>
+    <string name="dialog_allow">수락</string>
+    <string name="dialog_deny">거부</string>
+
+    <!--    Permission    -->
+    <string name="permission_rationale_app_use">앱을 이용하기 위해 권한이 필요합니다.</string>
+</resources>
